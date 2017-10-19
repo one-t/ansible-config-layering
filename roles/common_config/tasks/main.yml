@@ -2,7 +2,7 @@
 # tasks file for common_config
 - name: Copy Configuration Files
   copy:
-    src: '{{ config_file }}'
+    src: 'config_files/{{ config_file }}'
     dest: '/{{ config_file }}'
     force: yes
   when: config_file not in config_skip
