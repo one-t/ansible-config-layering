@@ -1,0 +1,5 @@
+---
+- name: Demonstrate Common Role
+  hosts: all
+  roles:
+    - common_config

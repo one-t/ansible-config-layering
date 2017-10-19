@@ -1,0 +1,14 @@
+---
+# tasks file for webserver
+- name: Set Configuration Files
+  copy:
+    src: '{{ config_file }}'
+    dest: '/{{ config_file }}'
+  loop_control:
+    loop_var: config_file
+  with_items: '{{ config_files }}'
+
+- name: Copy the Webmin configuration
+  copy:
+    src: etc/webmin.conf
+    dest: /etc/webmin.conf

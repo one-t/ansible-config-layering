@@ -1,0 +1,5 @@
+---
+# defaults file for common_config
+config_skip: []
+config_files:
+  - etc/motd

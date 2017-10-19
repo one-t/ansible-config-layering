@@ -1,0 +1,11 @@
+---
+# tasks file for common_config
+- name: Copy Configuration Files
+  copy:
+    src: '{{ config_file }}'
+    dest: '/{{ config_file }}'
+    force: yes
+  when: config_file not in config_skip
+  with_items: '{{ config_files }}'
+  loop_control:
+    loop_var: config_file
