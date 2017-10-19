@@ -2,9 +2,7 @@
 # tasks file for webserver
 - name: Copy Configuration Files
   copy:
-    src: 'config_files/{{ config_file }}'
-    dest: '/{{ config_file }}'
-  loop_control:
-    loop_var: config_file
+    src: 'config_files/{{ item }}'
+    dest: '/{{ item }}'
   with_items: '{{ config_files }}'
 
