@@ -3,3 +3,4 @@
 config_skip: []
 config_files:
   - etc/motd
+  - etc/arbitrary.conf
