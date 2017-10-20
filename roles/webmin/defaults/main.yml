@@ -3,3 +3,4 @@
 config_files:
   - etc/motd
   - etc/webmin.conf
+skip_config: []

@@ -5,4 +5,4 @@
     src: 'config_files/{{ item }}'
     dest: '/{{ item }}'
   with_items: '{{ config_files }}'
-
+  when: item not in config_skip
