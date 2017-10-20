@@ -10,5 +10,5 @@ galaxy_info:
 
 dependencies:
   - role: apache
-    apache_config_skip: '{{ webmin_config_files }}'
+    apache_config_skip: '{{ webmin_config_files }} + {{ webmin_config_skip }}'
     

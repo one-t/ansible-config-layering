@@ -10,5 +10,5 @@ galaxy_info:
 
 dependencies:
   - role: common_config
-    common_config_skip: '{{ apache_config_files }}'
+    common_config_skip: '{{ apache_config_files }} + {{ apache_config_skip }}'
     
