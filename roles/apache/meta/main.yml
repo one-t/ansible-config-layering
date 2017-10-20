@@ -9,6 +9,6 @@ galaxy_info:
   galaxy_tags: []
 
 dependencies:
-  - role: apache
-    apache_config_skip: '{{ webmin_config_files }}'
+  - role: common_config
+    common_config_skip: '{{ apache_config_files }}'
     

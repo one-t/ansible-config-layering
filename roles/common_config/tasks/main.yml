@@ -5,5 +5,5 @@
     src: 'config_files/{{ item }}'
     dest: '/{{ item }}'
     force: True
-  when: item not in config_skip
-  with_items: '{{ config_files }}'
+  when: item not in common_config_skip
+  with_items: '{{ common_config_files }}'

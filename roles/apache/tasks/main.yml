@@ -4,5 +4,5 @@
   copy:
     src: 'config_files/{{ item }}'
     dest: '/{{ item }}'
-  with_items: '{{ webmin_config_files }}'
-  when: item not in webmin_config_skip
+  with_items: '{{ apache_config_files }}'
+  when: item not in apache_config_skip

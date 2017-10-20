@@ -1,6 +1,6 @@
 ---
 # defaults file for common_config
-config_skip: []
-config_files:
+common_config_skip: []
+common_config_files:
   - etc/motd
   - etc/arbitrary.conf

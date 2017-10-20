@@ -1,6 +1,6 @@
 ---
 # defaults file for webserver
-config_files:
+webmin_config_files:
   - etc/motd
   - etc/webmin.conf
-skip_config: []
+webmin_config_skip: []

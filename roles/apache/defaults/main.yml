@@ -1,0 +1,6 @@
+---
+# defaults file for webserver
+apache_config_files:
+  - etc/apache2/httpd.conf
+  - etc/motd
+apache_config_skip: []
