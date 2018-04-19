@@ -2,7 +2,6 @@ pipeline {
   agent {
     docker {
       image 'ansible/centos7-ansible'
-      args '--rm'
     }
 
   }
