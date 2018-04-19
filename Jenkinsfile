@@ -9,7 +9,7 @@ pipeline {
     stage('Install') {
       steps {
         sh 'pip install ansible-lint'
-        sh 'ansible --version'
+        sh 'pip install --upgrade ansible'
       }
     }
     stage('Testing') {
