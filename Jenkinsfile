@@ -6,9 +6,18 @@ pipeline {
 
   }
   stages {
-    stage('') {
-      steps {
-        echo 'HI'
+    stage('Test') {
+      parallel {
+        stage('Test') {
+          steps {
+            echo 'HI'
+          }
+        }
+        stage('Run the thing') {
+          steps {
+            sh 'ansible-playbook --version'
+          }
+        }
       }
     }
   }
