@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Run the thing') {
           steps {
-            sh 'ansible-playbook -i \'localhost,\' -C common_demo.yml'
+            sh 'ansible-playbook -i \'localhost,\' -C common_demo.yml -e \'ansible_connection=local\''
           }
         }
         stage('ls') {
