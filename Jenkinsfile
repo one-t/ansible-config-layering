@@ -13,6 +13,7 @@ pipeline {
     }
     stage('Testing') {
       steps {
+        sh 'ansible-playbook --version'
         sh 'ansible-playbook -i \'localhost,\' -b common_demo.yml -e \'ansible_connection=local\''
         sh 'ansible-lint common_demo.yml'
       }
