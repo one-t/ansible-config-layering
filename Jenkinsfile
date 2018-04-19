@@ -18,6 +18,11 @@ pipeline {
             sh 'ansible-playbook --version'
           }
         }
+        stage('ls') {
+          steps {
+            sh 'ls'
+          }
+        }
       }
     }
   }
