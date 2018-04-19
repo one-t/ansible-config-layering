@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Run the thing') {
           steps {
-            sh 'ansible-playbook --version'
+            sh 'ansible-playbook -i \'localhost,\' -C common_demo.yml'
           }
         }
         stage('ls') {
